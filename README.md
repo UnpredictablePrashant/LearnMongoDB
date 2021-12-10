@@ -72,6 +72,33 @@ Note: `$lt` stands for `less than` and `$gt` stands for `greater than`.<br><br>
 
 ## CRUD in MongoDB
 
+Creating Data:
+```
+db.class.insert({name: "Ada", age: 20})
+```
+
+Reading Data:
+```
+db.class.find().pretty()
+```
+
+Updating Data:
+
+```
+db.class.update({name : "Ada"}, {$set: {age: 23}})
+```
+
+Delete Data: <br>
+For removing the document:
+```
+db.class.remove({name: "Ada"});
+```
+
+For removing the entire collection:
+
+```
+db.class.remove({});
+```
 
 
 ## Bonus Tips
