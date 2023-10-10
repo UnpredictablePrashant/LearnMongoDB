@@ -40,12 +40,12 @@ db.class.insert({name: "Prashant", age: 52})
 
 Let's see what data, I have added:
 ```
-db.class.find().pretty()
+db.class.find()
 ```
 Okay, I don't want to see `_id`
 
 ```
-db.class.find({}, _id: 0).pretty()
+db.class.find({}, {_id: 0})
 ```
 
 
@@ -79,7 +79,7 @@ db.class.insert({name: "Ada", age: 20})
 
 Reading Data:
 ```
-db.class.find().pretty()
+db.class.find()
 ```
 
 Updating Data:
